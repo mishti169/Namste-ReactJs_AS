@@ -1,21 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-const Title = () => {
-	return (
-		<>
-			<a href='/'>
-				<img
-					width={100}
-					alt='logo'
-					src='https://th.bing.com/th/id/OIP._b6q0KzTrD7VrwPuS-gojgAAAA?pid=ImgDet&rs=1'
-				/>
-			</a>
-			;
-		</>
-	);
-};
-
+import { Header } from './src/components/Header/Header';
+import { IMG_CON_URL } from './src/config';
 const AppLayout = () => {
 	return (
 		<>
@@ -25,24 +11,6 @@ const AppLayout = () => {
 		</>
 	);
 };
-const Header = () => {
-	return (
-		<>
-			<div className='header'>
-				<Title />
-				<div className='nav-items'>
-					<ul>
-						<li>Home</li>
-						<li>About</li>
-						<li>Contact</li>
-						<li>Cart</li>
-					</ul>
-				</div>
-			</div>
-		</>
-	);
-};
-
 const restaurantList = [
 	{
 		info: {
@@ -871,9 +839,7 @@ const RestaurantCard = (props) => {
 
 	return (
 		<div className='card'>
-			<img
-				src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${cloudinaryImageId}`}
-			/>
+			<img src={`${IMG_CON_URL}${cloudinaryImageId}`} />
 			<h2>{name}</h2>
 			<h3>{cuisines.join(',')}</h3>
 			<h4>{avgRating} stars</h4>
