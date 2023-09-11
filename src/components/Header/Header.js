@@ -1,7 +1,7 @@
 import React from 'react';
-import { Title } from '../Title/Title';
+import Title from '../Title/Title';
 
-export const Header = () => {
+const Header = () => {
 	return (
 		<>
 			<div className='header'>
@@ -18,3 +18,5 @@ export const Header = () => {
 		</>
 	);
 };
+
+export default Header;

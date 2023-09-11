@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Title = () => {
+const Title = () => {
 	return (
 		<>
 			<a href='/'>
@@ -14,3 +14,4 @@ export const Title = () => {
 		</>
 	);
 };
+export default Title;

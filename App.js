@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Header } from './src/components/Header/Header';
+import Header from './src/components/Header/Header';
 import { IMG_CON_URL } from './src/config';
 const AppLayout = () => {
 	return (
