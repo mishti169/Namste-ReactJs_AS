@@ -1,24 +1,31 @@
-body {
-	/* margin: 40px; */
+/* body {
+	margin: 40px;
 	margin: 0 auto;
 	width: 80%;
 	margin-top: 40px;
-}
+} */
 .header {
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
 	border: 1px solid;
+	background-color: aliceblue;
 }
+
 
 .nav-items > ul {
 	list-style-type: none;
 	display: flex;
+	padding: 10px;
+	border: 1px solid blue;
+	background-color: yellow;
 }
 
 .nav-items > ul > li {
 	padding: 10px;
-}
+	border: 1px solid red;
+	background-color: aqua;
+} 
 
 .card {
 	border: 2px solid;
@@ -30,8 +37,16 @@ body {
 .card > img {
 	width: 100%;
 }
+.restaurant-list{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 36px;
+}
+/*
 .restaurant-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 40px;
 }
+ */
+

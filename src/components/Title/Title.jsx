@@ -10,7 +10,6 @@ const Title = () => {
 					src='https://th.bing.com/th/id/OIP._b6q0KzTrD7VrwPuS-gojgAAAA?pid=ImgDet&rs=1'
 				/>
 			</a>
-			;
 		</>
 	);
 };
