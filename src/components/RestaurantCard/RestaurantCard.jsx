@@ -1,5 +1,4 @@
 import React from "react";
-import { IMG_CDN_URL } from "../../config.js";
 
 // const RestaurantCard  = (props) => {
 // 	const { name, cuisines, avgRating, cloudinaryImageId } = props;
@@ -21,7 +20,13 @@ const RestaurantCard = (props) => {
 
   return (
     <div className="card">
-      <img src={`${IMG_CDN_URL}${cloudinaryImageId}`} alt="logo" />
+      <img
+        src={
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+          cloudinaryImageId
+        }
+        alt="logo"
+      />
       <h2>{name}</h2>
       <h3>{cuisines.join(" ,  ")}</h3>
       <h4>{avgRating} stars</h4>

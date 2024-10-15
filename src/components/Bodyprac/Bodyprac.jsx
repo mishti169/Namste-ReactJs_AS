@@ -832,15 +832,9 @@ const restraurantList = [
 const Bodyprac = () => {
   return (
     <div className="restaurant-list">
-      {/*       
-      <RestaurantCard {...restraurantList[0]} />
-      <RestaurantCard {...restraurantList[1]} />
-      <RestaurantCard {...restraurantList[2]} />
-      <RestaurantCard {...restraurantList[3]} />
-      <RestaurantCard {...restraurantList[4]} />
-      <RestaurantCard {...restraurantList[5]} /> */}
-      {/* <RestaurantCard {...restraurantList[6]} /> */}
-      {/* <RestaurantCard {...restraurantList[7]} /> */}
+      {restraurantList.map((restaurant) => {
+        return <RestaurantCard {...restaurant.info} />;
+      })}
     </div>
   );
 };
